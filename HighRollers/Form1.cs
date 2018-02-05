@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HighRollers
 {
-    public partial class Form1 : Form
+    public partial class HighRollers : Form
     {
-        public Form1()
+        public HighRollers()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
