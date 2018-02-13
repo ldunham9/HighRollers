@@ -1,6 +1,6 @@
 ﻿namespace HighRollers
 {
-    partial class Form1
+    partial class frmHighRollers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHighRollers));
             this.picDie15 = new System.Windows.Forms.PictureBox();
             this.picDie12 = new System.Windows.Forms.PictureBox();
             this.picDie11 = new System.Windows.Forms.PictureBox();
@@ -49,6 +49,7 @@
             this.btnMore = new System.Windows.Forms.Button();
             this.btnLess = new System.Windows.Forms.Button();
             this.lblBets = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picDie15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDie12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDie11)).BeginInit();
@@ -199,7 +200,7 @@
             // 
             this.lblHighRollers.BackColor = System.Drawing.Color.Transparent;
             this.lblHighRollers.Font = new System.Drawing.Font("Showcard Gothic", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHighRollers.Location = new System.Drawing.Point(359, 71);
+            this.lblHighRollers.Location = new System.Drawing.Point(367, 9);
             this.lblHighRollers.Name = "lblHighRollers";
             this.lblHighRollers.Size = new System.Drawing.Size(504, 80);
             this.lblHighRollers.TabIndex = 12;
@@ -214,7 +215,6 @@
             this.lblP1Money.Size = new System.Drawing.Size(135, 35);
             this.lblP1Money.TabIndex = 13;
             this.lblP1Money.Text = "P1: $5000";
-            this.lblP1Money.Click += new System.EventHandler(this.lblP1Money_Click);
             // 
             // btnRoll
             // 
@@ -226,6 +226,7 @@
             this.btnRoll.TabIndex = 14;
             this.btnRoll.Text = "ROLL!";
             this.btnRoll.UseVisualStyleBackColor = false;
+            this.btnRoll.Click += new System.EventHandler(this.btnRoll_Click);
             // 
             // lblP2Money
             // 
@@ -257,6 +258,7 @@
             this.btnMore.TabIndex = 17;
             this.btnMore.Text = "MORE";
             this.btnMore.UseVisualStyleBackColor = false;
+            this.btnMore.Click += new System.EventHandler(this.btnMore_Click);
             // 
             // btnLess
             // 
@@ -268,6 +270,7 @@
             this.btnLess.TabIndex = 18;
             this.btnLess.Text = "LESS";
             this.btnLess.UseVisualStyleBackColor = false;
+            this.btnLess.Click += new System.EventHandler(this.btnLess_Click);
             // 
             // lblBets
             // 
@@ -280,13 +283,24 @@
             this.lblBets.Text = "$500";
             this.lblBets.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // lblStatus
+            // 
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(410, 117);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(402, 69);
+            this.lblStatus.TabIndex = 20;
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // frmHighRollers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1204, 632);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblBets);
             this.Controls.Add(this.btnLess);
             this.Controls.Add(this.btnMore);
@@ -308,9 +322,8 @@
             this.Controls.Add(this.picDie12);
             this.Controls.Add(this.picDie15);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Name = "frmHighRollers";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picDie15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDie12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDie11)).EndInit();
@@ -349,6 +362,7 @@
         private System.Windows.Forms.Button btnMore;
         private System.Windows.Forms.Button btnLess;
         private System.Windows.Forms.Label lblBets;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0B3BB40B-9306-4A0A-BB2B-D91C8492D5FB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HighRollers</RootNamespace>
+    <RootNamespace>frmHighRollers</RootNamespace>
     <AssemblyName>HighRollers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
